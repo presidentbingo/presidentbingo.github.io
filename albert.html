@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>BINGO</title>
+<title>BINGO - Albert</title>
 <link rel="icon" 
 type="image/png" 
 href="images/logo.png">
@@ -26,27 +26,32 @@ href="images/logo.png">
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-		<script>
-				function passWord() {
-				var testV = 1;
-				var pass1 = prompt('Please Enter The Password',' ');
-				while (testV < 3) {
-				if (!pass1) 
-				history.go(-1);
-				if (pass1.toLowerCase() == "albert") {
-				alert('Welcome sir...');
-				window.open('www.google.com');
-				break;
-				} 
-				testV+=1;
-				var pass1 = 
-				prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-				}
-				if (pass1.toLowerCase()!="password" & testV ==3) 
-				history.go(-1);
-				return " ";
-				} 
-				</script>
+	<SCRIPT>
+		function passWord() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+		if (!pass1) 
+		history.go(-1);
+		if (pass1.toLowerCase() == "letmein") {
+		alert('You Got it Right!');
+		window.open('www.wikihow.com');
+		break;
+		} 
+		testV+=1;
+		var pass1 = 
+		prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3) 
+		history.go(-1);
+		return " ";
+		} 
+	</SCRIPT>
+	<CENTER>
+	<FORM>
+		<input type="button" value="Enter Protected Area" onClick="passWord()">
+	</FORM>
+	</CENTER>
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 <div class="container">
@@ -55,7 +60,7 @@ href="images/logo.png">
 		<i class="fa fa-bars"></i>
 		</button>
 		<a class="navbar-brand page-scroll" href="index.html">
-		BINGO </a>
+		Albert </a>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
