@@ -26,32 +26,6 @@ href="images/logo.png">
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-	<SCRIPT>
-		function passWord() {
-		var testV = 1;
-		var pass1 = prompt('password pls lol¿',' ');
-		while (testV < 3) {
-		if (!pass1) 
-		history.go(-1);
-		if (pass1.toLowerCase() == "albert2020") {
-		alert('welcome sir... ;)');
-		window.open('www.google.com');
-		break;
-		} 
-		testV+=1;
-		var pass1 = 
-		prompt('lol uh wrong password...? bye bye','Password');
-		}
-		if (pass1.toLowerCase()!="password" & testV ==3) 
-		history.go(-1);
-		return " ";
-		} 
-	</SCRIPT>
-	<CENTER>
-	<FORM>
-		<input type="button" value="Enter Protected Area" onClick="passWord()">
-	</FORM>
-	</CENTER>
 <!-- Navigation -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 <div class="container">
@@ -115,11 +89,34 @@ href="images/logo.png">
 	<div class="row">
 		<h2>ABOUT ME</h2>
 		<div class="col-lg-8 col-lg-offset-2">
+				<SCRIPT>
+						function passWord() {
+						var testV = 1;
+						var pass1 = prompt('password pls lol¿',' ');
+						while (testV < 3) {
+						if (!pass1) 
+						history.go(-1);
+						if (pass1.toLowerCase() == "albert2020") {
+						alert('welcome sir... ;)');
+						window.open('www.google.com');
+						break;
+						} 
+						testV+=1;
+						var pass1 = 
+						prompt('lol uh wrong password...? bye bye','Password');
+						}
+						if (pass1.toLowerCase()!="password" & testV ==3) 
+						history.go(-1);
+						return " ";
+						} 
+					</SCRIPT>
+					<CENTER>
+					<FORM>
+						<input type="button" value="View" onClick="passWord()">
+					</FORM>
+					</CENTER>
 			<p>
-				Praesent ac dignissim diam. Aliquam lobortis elit et sapien eleifend, at sollicitudin metus elementum. Morbi imperdiet id ipsum at tristique. Nam suscipit tristique sem, <a href="#">quis</a> laoreet leo. Maecenas eget ante ipsum.
-			</p>
-			<p>
-				<a href="#" class="btnghost"><i class="fa fa-download"></i> Downloads</a>
+				<a href="#" onClick="passWord()" class="btnghost"><i class="fa fa-download"></i> View</a>
 			</p>
 		</div>
 	</div>
