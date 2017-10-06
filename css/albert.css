@@ -119,7 +119,7 @@ a:hover,a:focus {
 	padding:100px 0 100px 0;
 	text-align:center;
 	color:#fff;
-	background-image:radial-gradient(circle at 50% 50%,rgba(0, 0, 0, 0.08),rgba(0,0,0,0.18)),url(../images/albert/background.jpg);
+	background-image:radial-gradient(circle at 50% 50%,rgba(0, 0, 0, 0.28),rgba(0,0,0,0.58)),url(../images/albert/background.jpg);
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
