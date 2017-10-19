@@ -89,18 +89,12 @@ href="/images/albert/logo.jpg">
 			<p>
 				<a class="inlineblock"> <b><i>#</i></b> - HAH YOU HAVE BEEN CAUGHT CHEATING!</i></a>
 				<br>
-				<a class="inlineblock" ><b><i>#</i></b> - Your IP Address: <i>131.281.248.242</i></a>
+				<a class="inlineblock" ><b><i>#</i></b> - Your IP Address: <i><a echo $_SERVER["REMOTE_ADDR"]; a></i></a>
 			</p>
 		</div>
 	</div>
 </div>
 </section>
-
-<script type="text/javascript">
-	var ipAddress = '<!--#echo var="REMOTE_ADDR"-->';
-	alert (ipAddress);
-	</script>
-
 <!-- Footer -->
 <footer>
 <div class="container text-center">
