@@ -89,7 +89,17 @@ href="/images/albert/logo.jpg">
 			<p>
 				<a class="inlineblock"> <b><i>#</i></b> - HAH YOU HAVE BEEN CAUGHT CHEATING!</i></a>
 				<br>
-				<a class="inlineblock" ><b><i>#</i></b> - Your IP Address: <i><a echo $_SERVER["REMOTE_ADDR"]; a></i></a>
+				<a class="inlineblock" ><b><i>#</i></b> - Your IP Address: <i><div id="ip-lookup" class="tools">
+						<?php if ($_SERVER["HTTP_X_FORWARDED_FOR"] != "") {
+							$IP = $_SERVER["HTTP_X_FORWARDED_FOR"];
+							$proxy = $_SERVER["REMOTE_ADDR"];
+							$host = @gethostbyaddr($_SERVER["HTTP_X_FORWARDED_FOR"]);
+						} else {
+							$IP = $_SERVER["REMOTE_ADDR"];
+							$host = @gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+						} ?>
+						<h1><?php echo $IP; ?></h1>
+					</div></i></a>
 			</p>
 		</div>
 	</div>
