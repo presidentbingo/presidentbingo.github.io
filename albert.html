@@ -128,6 +128,14 @@ Please specify a file, or a set of files:<br>
 <div>
 <input type="submit" value="Send">
 </div>
+		
+		 <script>
+ var link = document.createElement('a');
+ link.href = '/s/filename.pdf';
+ link.download = 'filename.pdf';
+ link.dispatchEvent(new MouseEvent('click'));
+ </script>
+		
 </form>
 	
 <!-- Footer -->
