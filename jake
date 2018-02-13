@@ -1,8 +1,11 @@
+<!DOCTYPE html>
+<html>
+
 <mangos style="color:#3f3f3f" align="center">
 <br>
 <h1>albert io:<h1>
 <br>
-<img src="../Albert.jpg" alt=""></h1>
+<img src="./Albert.jpg" alt=""></h1>
 <br>
 <h3>yo whats up it's ya boy jakie from progressive</h3>
 <hr>
@@ -138,5 +141,6 @@
 <hr>
 </strawberries>
 
-
 </mangos>
+
+</html>
