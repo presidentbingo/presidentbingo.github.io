@@ -10,7 +10,6 @@
 <h3>yo whats up it's ya boy jakie from progressive</h3>
 <hr>
 <br>
-<br>
 
 <!--copy from <strawberries> to </strawberries> for the template-->
 
