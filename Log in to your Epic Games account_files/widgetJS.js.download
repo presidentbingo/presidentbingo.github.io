@@ -1,0 +1,136 @@
+
+var com = com || {};
+window.console = window.console || {log: function() {}};
+com.epicgames = com.epicgames || {};
+com.epicgames.account = com.epicgames.account || {};
+com.epicgames.account.web = com.epicgames.account.web || {};
+com.epicgames.account.web.URLS = com.epicgames.account.web.URLS || {};
+com.epicgames.account.web.URLS.base = "https://accounts.epicgames.com";
+com.epicgames.account.web.URLS.authorize = "https://accounts.epicgames.com/authorize/index";
+com.epicgames.account.web.URLS.doAuthorize = "https://accounts.epicgames.com/authorize/doAuthorize";
+com.epicgames.account.web.URLS.login = "https://accounts.epicgames.com/login/index";
+com.epicgames.account.web.URLS.doLogin = "https://accounts.epicgames.com/login/doLogin";
+com.epicgames.account.web.URLS.loginLauncher = "https://accounts.epicgames.com/login/launcher";
+com.epicgames.account.web.URLS.registerLauncher = "https://accounts.epicgames.com/register/launcher";
+com.epicgames.account.web.URLS.register = "https://accounts.epicgames.com/register/index";
+com.epicgames.account.web.URLS.showTerms = "https://accounts.epicgames.com/register/showTerms";
+com.epicgames.account.web.URLS.doSignUpTerms = "https://accounts.epicgames.com/register/doSignUpTerms";
+com.epicgames.account.web.URLS.doRegister = "https://accounts.epicgames.com/register/doRegister";
+com.epicgames.account.web.URLS.doHeadless = "https://accounts.epicgames.com/headless/doHeadless";
+com.epicgames.account.web.URLS.loginPsn = "https://accounts.epicgames.com/login/psn";
+com.epicgames.account.web.URLS.loginXbl = "https://accounts.epicgames.com/login/xbox";
+com.epicgames.account.web.URLS.loginNintendo = "https://accounts.epicgames.com/login/nintendo";
+com.epicgames.account.web.URLS.showSdn = "https://accounts.epicgames.com/sdnCheck/showSdn";
+com.epicgames.account.web.URLS.requestPasswordReset = "https://accounts.epicgames.com/requestPasswordReset/index";
+com.epicgames.account.web.URLS.doRequestPasswordReset = "https://accounts.epicgames.com/requestPasswordReset/doRequestReset";
+com.epicgames.account.web.URLS.resetPassword = "https://accounts.epicgames.com/resetPassword/index";
+com.epicgames.account.web.URLS.doResetPassword = "https://accounts.epicgames.com/resetPassword/doReset";
+com.epicgames.account.web.URLS.doRequestOneTimePassword = "https://accounts.epicgames.com/account/doRequestOneTimePassword";
+com.epicgames.account.web.URLS.doDisplayNameChange = "https://accounts.epicgames.com/displayNameChange/doDisplayNameChange";
+com.epicgames.account.web.URLS.doLogout = "https://accounts.epicgames.com/logout/doLogout";
+com.epicgames.account.web.URLS.doLogoutWithoutRedirect = "https://accounts.epicgames.com/logout/doLogoutWithoutRedirect";
+com.epicgames.account.web.URLS.logout = "https://accounts.epicgames.com/logout/index";
+com.epicgames.account.web.URLS.doEdit = "https://accounts.epicgames.com/edit/doEdit";
+com.epicgames.account.web.URLS.edit = "https://accounts.epicgames.com/edit/index";
+com.epicgames.account.web.URLS.logoutDialogContents = "https://accounts.epicgames.com/logout/logoutDialogContents";
+com.epicgames.account.web.URLS.widgetJS = "https://cdn1.unrealengine.com/AccountPortal/a054100209501d5ba607470ea37afdb390131ec3/accountportalwidgets-393e2c305ec8d14f9f0ed101b4889b2e.js";
+com.epicgames.account.web.URLS.widgetCSS = "https://cdn1.unrealengine.com/AccountPortal/a054100209501d5ba607470ea37afdb390131ec3/accountportalwidgets-62d1492c0269991a9d159fecccce2772.css";
+com.epicgames.account.web.URLS.i18nMessagesJSON = "https://accounts.epicgames.com/i18njs";
+com.epicgames.account.web.URLS.doRedirectWithErrorUrl = "https://accounts.epicgames.com/error/doRedirectWithError";
+com.epicgames.account.web.URLS.linkPsn = "https://accounts.epicgames.com/linkPsn/index";
+com.epicgames.account.web.URLS.doLinkPsn = "https://accounts.epicgames.com/linkPsn/doLinkPsn";
+com.epicgames.account.web.URLS.doShowPsnLink = "https://accounts.epicgames.com/linkPsn/doShow";
+com.epicgames.account.web.URLS.doLinkPsnConfirm = "https://accounts.epicgames.com/linkPsn/doConfirm";
+com.epicgames.account.web.URLS.twitchAlreadyLinked = "https://accounts.epicgames.com/linkTwitch/alreadyLinked";
+com.epicgames.account.web.URLS.githubAlreadyLinked = "https://accounts.epicgames.com/linkGithub/alreadyLinked";
+com.epicgames.account.web.URLS.doLinkTwitch = "https://accounts.epicgames.com/linkTwitch/doLinkTwitch";
+com.epicgames.account.web.URLS.doLinkGithub = "https://accounts.epicgames.com/linkGithub/doLinkGithub";
+com.epicgames.account.web.URLS.doLinkYouTube = "https://accounts.epicgames.com/linkYouTube/doLinkYouTube";
+com.epicgames.account.web.URLS.doLinkMsId = "https://accounts.epicgames.com/linkMsId/doLinkMsId";
+com.epicgames.account.web.URLS.msIdAlreadyLinked = "https://accounts.epicgames.com/linkMsId/alreadyLinked";
+com.epicgames.account.web.URLS.doLinkNintendo = "https://accounts.epicgames.com/linkNintendo/doLinkNintendo";
+com.epicgames.account.web.URLS.nintendoAlreadyLinked = "https://accounts.epicgames.com/linkNintendo/alreadyLinked";
+com.epicgames.account.web.URLS.facebookAlreadyLinked = "https://accounts.epicgames.com/linkFacebook/alreadyLinked";
+com.epicgames.account.web.URLS.vkAlreadyLinked = "https://accounts.epicgames.com/linkVK/alreadyLinked";
+com.epicgames.account.web.URLS.steamAlreadyLinked = "https://accounts.epicgames.com/linkSteam/alreadyLinked";
+com.epicgames.account.web.URLS.facebookLogin = "https://accounts.epicgames.com/login/facebook";
+com.epicgames.account.web.URLS.googleLogin = "https://accounts.epicgames.com/login/google";
+com.epicgames.account.web.URLS.qqLogin = "https://accounts.epicgames.com/login/qq";
+com.epicgames.account.web.URLS.vkLogin = "https://accounts.epicgames.com/login/vk";
+com.epicgames.account.web.URLS.externalLogin = "https://accounts.epicgames.com/login/external";
+com.epicgames.account.web.URLS.doExternalLogin = "https://accounts.epicgames.com/login/doExternal";
+com.epicgames.account.web.URLS.checkExternalLoginStatus = "https://accounts.epicgames.com/login/externalLoginStatus";
+com.epicgames.account.web.URLS.noXboxAccount = "https://accounts.epicgames.com/linkMsId/noXboxAccount";
+com.epicgames.account.web.URLS.nintendoPlatformBlock = "https://accounts.epicgames.com/linkNintendo/platformBlock";
+com.epicgames.account.web.URLS.xboxPlatformBlock = "https://accounts.epicgames.com/linkMsId/platformBlock";
+com.epicgames.account.web.URLS.psnPlatformBlock = "https://accounts.epicgames.com/linkPsn/platformBlock";
+com.epicgames.account.web.URLS.doTwoFactorAuth = "https://accounts.epicgames.com/login/doTwoFactor";
+com.epicgames.account.web.URLS.sendFriendRequest = "https://accounts.epicgames.com/launcher/sendFriendRequest";
+com.epicgames.account.web.URLS.consoleLoginResult = "https://accounts.epicgames.com/launcher/consoleLoginResult";
+com.epicgames.account.web.URLS.doConsoleLoginResult = "https://accounts.epicgames.com/launcher/doConsoleLoginResult";
+com.epicgames.account.web.URLS.doImportSteamFriends = "https://accounts.epicgames.com/launcher/doImportSteamFriends";
+com.epicgames.account.web.loaded = false;
+com.epicgames.account.web.runLocal = false;
+com.epicgames.account.web.useHooks = window.ue && window.ue.signinprompt;
+
+com.epicgames.account.web.load = function(callback)
+{
+    callback = callback || function (){};
+
+    if (!com.epicgames.account.web.loaded)
+    {
+        console.log("Loading widget js");
+        com.epicgames.account.web.loaded = true;
+        // load the css
+        var dynamicCSS = document.createElement("link");
+        dynamicCSS.rel = "stylesheet";
+        dynamicCSS.type = "text/css";
+        dynamicCSS.href = com.epicgames.account.web.URLS.widgetCSS;
+
+        document.getElementsByTagName('head')[0].appendChild(dynamicCSS);
+
+
+        // load the JS
+        var dynamicJS = document.createElement("script");
+        dynamicJS.src = com.epicgames.account.web.URLS.widgetJS;
+
+            function loaded() {
+
+                if (dynamicJS.readyState === undefined)
+                {
+                    console.log("Loaded, running callback");
+                    callback();
+                }
+                else if (dynamicJS.readyState === 'loaded' || dynamicJS.readyState === 'complete') {
+                    console.log("Loaded, running callback");
+                    dynamicJS.onreadystatechange = null;
+                    callback();
+                }
+            };
+
+
+        if (dynamicJS.addEventListener) {
+          dynamicJS.addEventListener("load", loaded, false);
+        }
+        else if (dynamicJS.readyState) {
+          dynamicJS.onreadystatechange = loaded;
+        }
+
+        document.getElementsByTagName('body')[0].appendChild(dynamicJS);
+    }
+    else
+    {
+        console.log("Already loaded, running callback");
+        callback();
+    }
+}
+
+String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/{(\d+)}/g, function(match, number) {
+      return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+      ;
+    });
+};
