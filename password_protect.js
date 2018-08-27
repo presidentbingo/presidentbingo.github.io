@@ -5,8 +5,7 @@ function passWord() {
     if (!pass1) 
     history.go(-1);
     if (pass1.toLowerCase() == "lol") {
-    alert('Welcome.');
-    window.open('http://www.bingnut.me/school');
+    alert('Welcome. Remember to thank Jake for his effort!');
     break;
     } 
     testV+=1;
