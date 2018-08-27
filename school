@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>bingnut - downloads</title>
+<link rel="icon" type="image/png" href="./images/iguana-icon.png">
+<link rel="stylesheet" href="./style.css">
+<meta name="description" content="bingnut's downloads page." />
+<meta name="keywords" content="bingnut downloads" />
+<meta name="author" content="bingus" />
+
+</head>
+
+<body>
+<pumpkins align="center">
+  
+  
+  <!-- | ======================================= MAIN SECTION ======================================= | -->
+  
+  
+<h1>downloads.</h1>
+<h1><img class="roundimg" src="./images/iguana-love.jpg" alt="" width="360px" height="427.5px"></h1>
+<h3>yooo download some of my stuff i guess here ya guys go 🙂</h3>
+<br>
+<hr style="width: 75%">
+
+  <!-- | ======================================= DOWNLOADS SECTION ======================================= | -->
+
+<bananas>
+<h1>iguana.exe 🦎</h1>
+<h3>
+
+> password: turkeyboy<br><br>
+
+click <a href="./files/iguana.exe">here</a> to download the latest version
+
+</h3>
+<hr>
+</bananas>
+
+<bananas>
+<h1>injector.exe 🍍</h1>
+<h3>
+  
+click <a href="./files/injector.exe">here</a> to download the latest version
+  
+</h3>
+  <hr>
+</bananas>
+  
+<bananas>
+<h1>bingnut.exe 🔫</h1>
+<h3>
+
+  > username: guest<br>
+  > password: password<br><br>
+  
+click <a href="./files/bingnut_2.4.exe">here</a> to download the latest version
+  
+</h3>
+</bananas>
+
+</pumpkins>
+</body>
+
+</html>
