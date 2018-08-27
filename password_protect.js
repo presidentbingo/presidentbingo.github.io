@@ -7,7 +7,6 @@ function passWord() {
     if (pass1.toLowerCase() == "lol") {
     alert('Welcome. Remember to thank Jake for his effort!');
     break;
-    return " ";
     } 
     testV+=1;
     var pass1 = 
