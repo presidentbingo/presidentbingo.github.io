@@ -4,12 +4,10 @@
 <head>
 
 <script>
-  var password;
-  var pass1 = "lol";
-  password = prompt('Enter Password to View Page', ' ');
-  if (password == pass1)
-  alert('Correct password, click OK to enter');
-  else
+  var pass_input;
+  var password = "lol";
+  password = prompt('Password', ' ');
+  if (pass_input != password)   
   {
     window.location = "http://www.bingnut.me/school";
   }
